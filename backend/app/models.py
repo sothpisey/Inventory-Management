@@ -76,5 +76,5 @@ class Supplier(Base):
     name = Column(String, nullable=False)
     contact_info = Column(String)
 
-
-Base.metadata.create_all(engine)
+if __name__ == '__main__':
+    Base.metadata.create_all(engine)
